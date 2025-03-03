@@ -215,7 +215,7 @@ strong {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #fff; 
+    background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -256,11 +256,13 @@ strong {
     border-radius: 9px;
     color: #fff;
 }
+
 body {
     font-family: Poppins, sans-serif;
     line-height: 1;
     font-weight: 400;
-    color: #e1e6ed; /* main color */
+    color: #e1e6ed;
+    /* main color */
 }
 
 .heading-primary,
@@ -268,14 +270,16 @@ body {
 .heading-tertiary {
     font-weight: 700;
     letter-spacing: -0.5px;
-    color: #333; /* unchanged */
+    color: #333;
+    /* unchanged */
 }
 
 .subheading {
     display: block;
     font-size: 3rem;
     font-weight: 500;
-    color: #666; /* unchanged */
+    color: #666;
+    /* unchanged */
     text-transform: uppercase;
     margin-bottom: 1.6rem;
     letter-spacing: 0.75px;
@@ -285,7 +289,8 @@ body {
 .link:link,
 .link:visited {
     display: inline-block;
-    color: #e1e6ed; /* main color */
+    color: #e1e6ed;
+    /* main color */
     text-decoration: none;
     border-bottom: 1px solid currentColor;
     padding-bottom: 2px;
@@ -294,26 +299,30 @@ body {
 
 .link:hover,
 .link:active {
-    color: #e4e9ef; /* lighter shade */
+    color: #e4e9ef;
+    /* lighter shade */
     border-bottom: 1px solid transparent;
 }
 
 .list-icon {
     width: 3rem;
     height: 3rem;
-    color: #e1e6ed; /* main color */
+    color: #e1e6ed;
+    /* main color */
 }
 
 *:focus {
     outline: none;
-    box-shadow: 0 0 0 3px #b4b8be; /* unchanged */
+    box-shadow: 0 0 0 3px #b4b8be;
+    /* unchanged */
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #e1e6ed; /* main color */
+    background-color: #e1e6ed;
+    /* main color */
     height: 9.6rem;
     padding: 0 4.8rem;
 }
@@ -322,7 +331,8 @@ body {
 .main-nav-link:visited {
     display: inline-block;
     text-decoration: none;
-    color: #333; /* unchanged */
+    color: #333;
+    /* unchanged */
     font-weight: 500;
     font-size: 1.8rem;
     transition: all 0.3ms;
@@ -330,30 +340,35 @@ body {
 
 .main-nav-link:hover,
 .main-nav-link:active {
-    color: #e1e6ed; /* main color */
+    color: #e1e6ed;
+    /* main color */
 }
 
 .main-nav-link.nav-contact:link,
 .main-nav-link.nav-contact:visited {
     padding: 1.2rem 2.4rem;
-    background-color: #9ea1a6; /* unchanged */
+    background-color: #9ea1a6;
+    /* unchanged */
     border-radius: 9px;
     color: #fff;
 }
 
 .main-nav-link.nav-contact:hover,
 .main-nav-link.nav-contact:active {
-    background-color: #e1e6ed; /* main color */
+    background-color: #e1e6ed;
+    /* main color */
 }
 
 .icon-mobile-nav {
     height: 4.8rem;
     width: 4.8rem;
-    color: #333; /* unchanged */
+    color: #333;
+    /* unchanged */
 }
 
 .section-hero {
-    background-color: #e1e6ed; /* main color */
+    background-color: #e1e6ed;
+    /* main color */
     padding: 4.8rem 0 9.6rem 0;
 }
 
@@ -371,21 +386,25 @@ body {
 
 .footer {
     padding: 12.8rem 0;
-    border-top: 1px solid #eee; /* unchanged */
+    border-top: 1px solid #eee;
+    /* unchanged */
 }
 
 .footer-link:link,
 .footer-link:visited {
     text-decoration: none;
     font-size: 1.6rem;
-    color: #767676; /* unchanged */
+    color: #767676;
+    /* unchanged */
     transition: all 0.3s;
 }
 
 .footer-link:hover,
 .footer-link:active {
-    color: #555; /* unchanged */
+    color: #555;
+    /* unchanged */
 }
+
 .main-nav-link.nav-contact:hover,
 .main-nav-link.nav-contact:active {
     background-color: #e1e6ed;
@@ -502,7 +521,7 @@ body {
  * CONTACT SECTION
  ***************************/
 
- .section-contact {
+.section-contact {
     padding: 4.8rem 0 12.8rem;
 }
 
@@ -545,6 +564,7 @@ body {
 }
 
 .contact-form input,
+.contact-form textarea,
 .contact-form select {
     width: 100%;
     padding: 1.2rem;
@@ -603,7 +623,7 @@ body {
     font-size: 1.4rem;
     line-height: 1.6;
     color: #767676;
-    position: absolute; 
+    position: absolute;
     right: 5%;
 }
 
@@ -638,4 +658,93 @@ body {
 .footer-link:hover,
 .footer-link:active {
     color: #555;
+}
+
+/***************************
+ * PROFILE AND SKILLS SECTION
+ ***************************/
+
+.section-profile {
+    padding: 40px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Profile and Skills Grid Layout */
+.profile-skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Profile Styling */
+.profile-text-box {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.profile-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.profile-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.profile-group {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-group-item {
+    margin-bottom: 15px;
+}
+
+.list-group-item h5 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.list-group-item p {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+/* Skills Box Styling */
+.skills-box {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.skills,
+.skill {
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.progress {
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 10px;
+}
+
+.progress-bar {
+    text-align: center;
+    color: white;
+    padding-right: 5px;
+    height: 100%;
 }

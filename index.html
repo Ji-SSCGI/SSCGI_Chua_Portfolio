@@ -29,8 +29,8 @@
         <nav class="main-nav">
             <ul class="main-nav-list">
                 <li><a class="main-nav-link" href="#hero">Home</a></li>
+                <li><a class="main-nav-link" href="#profile">Profile</a></li>
                 <li><a class="main-nav-link" href="#projects">Projects</a></li>
-                <li><a class="main-nav-link" href="#contact">Contact</a></li>
                 <li><a class="main-nav-link nav-contact" href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -67,6 +67,97 @@
                 </div>
             </div>
         </section>
+
+        <!-- PROFILE & SKILLS SECTION-->
+        <section class="section-profile" id="profile">
+            <div class="container">
+                <span class="subheading">Profile & Skills</span>
+                <h2 class="heading-secondary"></h2>
+            </div>
+
+            <div class="container profile-skills-grid">
+                <!-- Profile -->
+                <div class="profile-text-box">
+                    <p class="profile-title"></p>
+                    <p class="profile-description"></p>
+                    <ul class="profile-group">
+                        <li class="list-group-item">
+                            <h5><i class="fas fa-calendar"></i> Name:</h5>
+                            <p>Jessie Q. Chua</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h5><i class="fas fa-calendar"></i> Birth Date:</h5>
+                            <p>April 23, 1989</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h5><i class="fas fa-building"></i> Current Position:</h5>
+                            <p>Trainee at Systems and Software Consulting Group, Inc.</p>
+                        </li>
+                        <li class="list-group-item">
+                            <h5><i class="fas fa-home"></i> Website:</h5>
+                            <p></p>
+                        </li>
+                        <li class="list-group-item">
+                            <h5><i class="fas fa-envelope"></i> Email:</h5>
+                            <p>jessie.chua.dev@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Skill Bars -->
+                <div class="skills-box">
+                    <div class="skills">
+                        <h5><i class="fas fa-check"></i> HTML 5</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%">90%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <h5><i class="fas fa-check"></i> CSS</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%">90%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <h5><i class="fas fa-check"></i> JavaScript</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%">80%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <h5><i class="fas fa-check"></i> Bootstrap</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%">80%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <h5><i class="fas fa-check"></i> PHP</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%">80%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <h5><i class="fas fa-check"></i> C#</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 75%">75%</div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <h5><i class="fas fa-check"></i> UI/UX</h5>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%">70%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- PROJECT SECTION -->
         <section class="section-projects" id="projects">
@@ -158,7 +249,8 @@
 
                             <div>
                                 <label for="message">Message</label>
-                                <input id="message" type="message" placeholder="Message" required />
+                                <textarea id="message" type="message" placeholder="Message" required rows="4"
+                                    cols="50"></textarea>
                             </div>
 
                             <button class="btn--form">Send</button>
