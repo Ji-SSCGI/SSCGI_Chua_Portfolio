@@ -6,6 +6,8 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
 }
 
 body {
@@ -64,7 +66,7 @@ body {
 
 .grid {
     display: grid;
-    column-gap: 6.4rem;
+    column-gap: 1rem;
     row-gap: 9.6rem;
 }
 
@@ -93,6 +95,7 @@ body {
 }
 
 .grid--center-v {
+    justify-content: center;
     align-items: center;
 }
 
@@ -320,7 +323,7 @@ strong {
  ***************************/
 
 .section-projects {
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 .project-title {

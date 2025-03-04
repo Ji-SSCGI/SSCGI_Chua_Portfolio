@@ -5,6 +5,10 @@
 /**************************/
 
 @media (max-width: 84em) {
+
+    body {
+        max-width: 120rem;
+    }
     .hero {
         max-width: 120rem;
     }
