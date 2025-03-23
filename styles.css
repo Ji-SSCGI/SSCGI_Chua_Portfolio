@@ -576,21 +576,6 @@ h5 {
   margin-bottom: 10px;
 }
 
-.progress {
-  background-color: #ddd;
-  border-radius: 10px;
-  overflow: hidden;
-  height: 10px;
-}
-
-.progress-bar {
-  text-align: center;
-  color: white;
-  padding-right: 5px;
-  height: 100%;
-  background-color: #666;
-}
-
 /**/
 .project-link-button {
   display: inline-block;
@@ -607,4 +592,37 @@ h5 {
 
 .project-link-button:hover {
   background-color: #333; /* Darker green on hover */
+}
+
+/* Skills Grid Fix */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(80px, 1fr)
+  ); /* Smaller min value */
+  gap: 12px; /* Reduce gap for better fit on small screens */
+  padding-top: 12px;
+  justify-items: center; /* Center grid items */
+}
+
+/* Skill Logo Fix */
+.skill-logo {
+  width: 40px;
+  height: 40px;
+  max-width: 100%; /* Ensure it doesn't overflow */
+  object-fit: contain;
+}
+
+/* Font Size Adjustments with Clamp */
+h5 {
+  font-size: clamp(1.2rem, 2vw, 2rem); /* Scale based on viewport width */
+}
+
+/* Responsive Alignment */
+.skill-item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
